@@ -1,0 +1,101 @@
+a.remanejamento-card-container
+{
+  width: 100%;
+  background-color: #FFF;
+
+  border: 2px solid #FECCD9;
+  border-radius: 3px;
+  padding: 8px 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+
+  text-decoration: none;
+  cursor: pointer;
+  
+  transition: all .45s ease-in-out;
+}
+
+a.remanejamento-card-container:hover
+{
+  background-color: #FECCD9;
+}
+
+a.remanejamento-card-container div.remanejamento-card-content
+{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+
+  flex: 1;
+}
+
+a.remanejamento-card-container div.remanejamento-card-content h3,
+a.remanejamento-card-container div.remanejamento-card-content p
+{
+  margin: 0;
+}
+
+a.remanejamento-card-container div.remanejamento-card-content h3
+{
+  font-size: 1rem;
+}
+
+a.remanejamento-card-container div.remanejamento-card-content p
+{
+  text-align: justify;
+  color: #333;
+}
+
+a.remanejamento-card-container div.remanejamento-card-data
+{
+  width: 110px;
+}
+
+a.remanejamento-card-container div.remanejamento-card-data p
+{
+  color: #7F8C8D;
+	font-weight: 500;
+  font-size: 14px;
+}
+
+div.panel.convocacoes-panel div.content-container div.convocacoes-tabs-container div#cronograma-container
+{
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px)
+{
+  a.remanejamento-card-container
+  {
+    flex-direction: column;
+    row-gap: 0;
+    column-gap: 0;
+    align-items: flex-start;
+  }
+
+  a.remanejamento-card-container div.remanejamento-card-content div.remanejamento-card-texto h3,
+  a.remanejamento-card-container div.remanejamento-card-content div.remanejamento-card-texto p
+  {
+    text-align: left;
+  }
+
+  a.remanejamento-card-container div.remanejamento-card-content div.remanejamento-card-texto p
+  {
+    display: none;
+  }
+
+  a.remanejamento-card-container div.remanejamento-card-data
+  {
+    width: auto;
+    margin: 0;
+  }
+
+  a.remanejamento-card-container div.remanejamento-card-data p
+  {
+    margin: 0 0 0 calc(40px + 0.5rem);
+    text-align: left;
+  }
+}

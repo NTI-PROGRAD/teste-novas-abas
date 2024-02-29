@@ -1,0 +1,70 @@
+div.panel.remanejamentos-panel
+{}
+
+div.panel.remanejamentos-panel h2.subtab-title
+{}
+
+div.panel.remanejamentos-panel div.content-container
+{
+  width: 100%;
+  min-height: 400px;
+  background-color: #FEDDE6;
+  padding: 1.5rem 2rem;
+}
+
+div.panel.remanejamentos-panel div.content-container p.remanejamentos-description
+{
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+div.panel.remanejamentos-panel div.content-container p span.highlight
+{
+  font-weight: 600;
+}
+
+div.panel.remanejamentos-panel div.content-container div.remanejamento-tabs-container
+{}
+
+div.panel.remanejamentos-panel div.content-container div.remanejamento-tabs-container button.remanejamento-tab
+{
+  background-color: transparent;
+  border: none;
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  
+  cursor: pointer;
+  transition: all .45s ease-in-out;
+  
+  margin-bottom: 0;
+}
+
+div.panel.remanejamentos-panel div.content-container div.remanejamento-tabs-container button.remanejamento-tab.active-tab
+{
+  color: #9E042D;
+  border-bottom: 3px solid #9E042D;
+}
+
+div.panel.remanejamentos-panel div.content-container hr
+{
+  margin-top: 0;
+}
+
+div.panel.remanejamentos-panel div.content-container div.container
+{
+  display: none;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+div.panel.remanejamentos-panel div.content-container div.container.active
+{
+  display: flex;
+}
+
+/* div.panel.remanejamentos-panel div.content-container div.container h3
+{
+  font-size: 1.17rem;
+} */

@@ -1,0 +1,208 @@
+@import url('./loader.css');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+body {
+	background-color: #FCFCFC;
+	font-size: 14px;
+	margin: 0;
+	padding: 30px 0;
+}
+
+div#corpo {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+}
+
+div.header {
+	height: 75px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+
+div.header img {
+	margin: 1rem 1.5rem;
+}
+
+div.header p a {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+div.title {
+	min-height: 75px;
+	border-bottom: 1px solid #CCC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.title h1 {
+	text-align: center;
+}
+
+img.logo-sisu {
+	width:100%;
+}
+
+div.body {
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+	min-height: 400px;
+	padding: 0.5rem;
+}
+
+img.pdf-logo
+{
+	width: 40px;
+	height: 40px;
+}
+
+div.tab-content {
+	display: none;
+}
+
+h2.subtab-title
+{
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+a {
+	color: #9e042d;
+	font-weight: bold;
+}
+
+.texto-vermelho,
+span.red {
+	color: #9E042D;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Open Sans SemiCondensed';
+	font-weight: 700;
+}
+
+p.heteroidentificacao
+{
+	margin-top: 0;
+}
+
+p,
+ul li {
+	font-weight: 600;
+}
+
+h3.data {
+	font-family: 'Open Sans Condensed';
+	margin-bottom: 0;
+}
+
+h3.titulo-area {
+	margin: 15px 0;
+	text-align: center;
+}
+
+div.quadro-de-avisos {
+	padding: 5px;
+	border-radius: 5px;
+	border-top: 1px solid #c0c5cc;
+	border-bottom: 1px solid #c0c5cc;
+	box-shadow: -1px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+div.quadro-de-avisos div.aviso:not(:first-child)
+{ margin-top: 10px; }
+
+div.aviso {
+	padding: 15px 12px;
+	background-color: #f6e58d;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 1px solid #f0d445;
+	font-weight: 600;
+}
+
+div.aviso p {
+	text-align: left;
+	margin: 0;
+}
+
+div.quadro-de-avisos div.aviso p.data,
+div.aviso p.data {
+	font-size: 12px;
+	margin-bottom: 5px;
+	text-align: left;
+	font-style: italic;
+}
+
+div.aviso p span.scroll-trigger {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+div.aviso p span.stidocs-modal-trigger,
+div.aviso p span.selecionados-modal-trigger {
+	background: transparent;
+	border: none;
+	font-family: inherit;
+	color: #9E042D;
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	div#corpo {
+		width: 95%;
+	}
+	
+	div.body {
+		width: 95%;
+		padding: 0;
+	}
+
+	div.tab-menu-container {
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	div.tab-menu-container button.tab-option {
+		padding: 4px 6px;
+		width: 100%;
+		border-left: 1px solid #9E042D;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+.publicacao-titulo {
+	margin-left: 20px;
+}
+
+div.aviso p.titulo {
+	font-weight: 700;
+}
+
+div.aviso p.texto {
+	font-weight: 600;
+}

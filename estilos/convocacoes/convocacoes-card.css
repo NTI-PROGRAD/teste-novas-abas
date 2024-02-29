@@ -1,0 +1,103 @@
+a.convocacao-card-container
+{
+  width: 100%;
+  background-color: #FFF;
+
+  border: 2px solid #feccd9;
+  border-radius: 3px;
+  padding: 8px 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: all .45s ease-in-out;
+}
+
+a.convocacao-card-container:hover
+{
+  background-color: #FECCD9;
+}
+
+a.convocacao-card-container div.convocacao-card-content
+{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+
+  flex: 1;
+}
+
+a.convocacao-card-container div.convocacao-card-content img.pdf-logo
+{
+  align-self: flex-start;
+}
+
+a.convocacao-card-container div.convocacao-card-content h3,
+a.convocacao-card-container div.convocacao-card-content p
+{
+  margin: 0;
+}
+
+a.convocacao-card-container div.convocacao-card-content div.convocacao-card-texto h3
+{
+  font-size: 1rem;
+}
+
+a.convocacao-card-container div.convocacao-card-content p
+{
+  text-align: justify;
+  color: #333;
+}
+
+a.convocacao-card-container div.convocacao-card-data
+{
+  width: 110px;
+  align-self: flex-start;
+}
+
+a.convocacao-card-container div.convocacao-card-data p
+{
+  margin: 0;
+  color: #7F8C8D;
+	font-weight: 500;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px)
+{
+  a.convocacao-card-container
+  {
+    flex-direction: column;
+    row-gap: 0;
+    column-gap: 0;
+    align-items: flex-start;
+  }
+
+  a.convocacao-card-container div.convocacao-card-content div.convocacao-card-texto h3,
+  a.convocacao-card-container div.convocacao-card-content div.convocacao-card-texto p
+  {
+    text-align: left;
+  }
+
+  a.convocacao-card-container div.convocacao-card-content div.convocacao-card-texto p
+  {
+    display: none;
+  }
+
+  a.convocacao-card-container div.convocacao-card-data
+  {
+    width: auto;
+    margin: 0;
+  }
+
+  a.convocacao-card-container div.convocacao-card-data p
+  {
+    margin: 0 0 0 calc(40px + 0.5rem);
+    text-align: left;
+  }
+}

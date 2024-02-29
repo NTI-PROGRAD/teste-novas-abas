@@ -1,0 +1,86 @@
+div.panel.convocacoes-panel
+{}
+
+div.panel.convocacoes-panel h2.subtab-title
+{}
+
+div.panel.convocacoes-panel div.content-container
+{
+  width: 100%;
+  min-height: 400px;
+
+  background-color: #FEDDE6;
+
+  padding: 1.5rem 2rem;
+  font-size: 1.05rem;
+}
+
+div.panel.convocacoes-panel div.content-container p
+{
+  text-align: justify;
+  font-weight: 400;
+}
+
+div.panel.convocacoes-panel div.content-container p span.highlight
+{
+  font-weight: 600;
+}
+
+div.panel.convocacoes-panel div.content-container div.convocacoes-tabs-container
+{}
+
+div.panel.convocacoes-panel div.content-container div.convocacoes-tabs-container button.convocacoes-tab-option
+{
+  background-color: transparent;
+  border: none;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all .45s ease-in-out;
+
+  margin-bottom: 0;
+}
+
+div.panel.convocacoes-panel div.content-container div.convocacoes-tabs-container button.convocacoes-tab-option:hover
+{
+  color: #9e042d;
+}
+
+div.panel.convocacoes-panel div.content-container div.convocacoes-tabs-container button.convocacoes-tab-option.tab-option-actived
+{
+  color: #9e042d;
+  border-bottom: 3px solid #9e042d;
+}
+
+div.panel.convocacoes-panel div.content-container hr
+{
+  margin-top: 0;
+}
+
+div.panel.convocacoes-panel div.content-container div.container
+{
+  display: none;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+div.panel.convocacoes-panel div.content-container div.container.active
+{
+  display: flex;
+}
+
+/* div.panel.convocacoes-panel div.content-container div.container h3
+{
+  font-size: 1.17rem;
+} */
+
+@media screen and (max-width: 768px)
+{
+  div.panel.convocacoes-panel div.content-container p
+  {
+    text-align: left;
+  }
+}

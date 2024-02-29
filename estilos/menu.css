@@ -1,0 +1,122 @@
+div.menu
+{
+	display: flex;
+	flex-direction: column;
+
+	width: 90%;
+	max-width: 900px;
+	margin: 15px auto;
+}
+
+div.tab-menu-container {
+	display: flex;
+	justify-content: center;
+
+  position: relative;
+}
+
+div.menu div.tab-menu-container div.subtab-menu-container
+{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  
+  width: 100%;
+  max-width: 900px;
+}
+
+div.tab-menu-container button.tab-option {
+	flex: 1;
+	padding: 8px 12px;
+	
+  border: 0;
+	border-right: 1px solid #9E042D;
+
+	font-family: 'Open Sans SemiCondensed';
+	font-weight: 500;
+	font-size: 16px;
+
+	cursor: pointer;
+	transition: ease 0.45s background-color;
+	color: #444;
+}
+
+div.tab-menu-container button.tab-option:first-child {
+	border-left: 1px solid #9E042D;
+}
+
+div.tab-menu-container button.tab-option:hover {
+	background-color: #FDBBCC;
+}
+
+div.tab-menu-container button.tab-option.active {
+	background-color: #FDBBCC;
+	font-weight: 600;
+	color: #9E042D;
+}
+
+div.subtab-menu-container
+{ display: flex; }
+
+div.subtab-menu-container button.subtab-option
+{
+	flex: 1;
+	padding: 8px 12px;
+
+	border: 0;
+	background-color: #9E042D;
+	color: #FFF;
+
+	font-family: "Open Sans SemiCondensed";
+	font-weight: 500;
+	font-size: 16px;
+
+	cursor: pointer;
+	transition: ease 0.45s background-color;
+}
+
+div.subtab-menu-container button.subtab-option:not(:last-child)
+{ border-right: 1px solid #FFF; }
+
+div.subtab-menu-container button.subtab-option.active
+{
+	text-decoration: underline;
+}
+
+div.subtab-menu-container button.subtab-option:hover
+{
+	text-decoration: underline;
+	background-color: #860326;
+}
+
+@media screen and (max-width: 768px)
+{
+	div.menu
+	{
+		width: 95%;
+		max-width: none;
+	}
+
+	div.menu div.tab-menu-container
+	{
+		width: 100%;
+	}
+
+	div.tab-menu-container button.tab-option:first-child,
+	div.tab-menu-container button.tab-option {
+		border: none;
+	}	
+
+	div.menu div.tab-menu-container div.subtab-menu-container
+	{
+		position: static;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.menu div.tab-menu-container div.subtab-menu-container button.subtab-option:not(:last-child)
+	{
+		border-right: none;
+		border-bottom: 1px solid #FFF;
+	}
+}

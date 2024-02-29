@@ -1,0 +1,61 @@
+table.cronograma
+{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+table.cronograma thead
+{}
+
+table.cronograma thead tr
+{
+  text-align: left;
+  display: flex;
+  padding-bottom: .25rem;
+}
+
+table.cronograma thead tr th,
+table.cronograma thead tr td
+{ padding-left: .5rem; }
+
+table.cronograma thead tr th:first-child,
+table.cronograma thead tr td:first-child
+{ width: 150px; }
+
+table.cronograma thead tr th:not(:first-child),
+table.cronograma thead tr td:not(:first-child)
+{ flex: 1; }
+
+table.cronograma tbody
+{}
+
+table.cronograma tbody tr
+{
+  display: flex;
+  margin-bottom: .25rem;
+}
+
+table.cronograma tbody tr th,
+table.cronograma tbody tr td
+{
+  border-top: 2px solid #FFF;
+  display: flex;
+  align-items: center;
+}
+
+table.cronograma tbody tr th:first-child,
+table.cronograma tbody tr td:first-child
+{
+  width: 150px;
+  padding: 10px;
+  background-color: #FFF;
+  font-weight: 600;
+}
+
+table.cronograma tbody tr th:not(:first-child),
+table.cronograma tbody tr td:not(:first-child)
+{
+  flex: 1;
+  padding-left: 1rem;
+}

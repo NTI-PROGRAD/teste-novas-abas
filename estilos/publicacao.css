@@ -1,0 +1,102 @@
+div.panel
+{
+	display: none;
+}
+
+div.panel.actived-panel
+{
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+a.publicacao-container
+{
+	width: 100%;
+	max-width: 950px;
+
+	border: 2px solid #FECCD9;
+	border-radius: 3px;
+	padding: 8px 12px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: all .45s ease-in-out;
+}
+
+a.publicacao-container:hover
+{
+	background-color: #FECCD9;
+}
+
+a.publicacao-container div.publicacao-content
+{
+	display: flex;
+	align-items: center;
+	column-gap: .5rem;
+}
+
+a.publicacao-container div.publicacao-content img.pdf-logo
+{
+	align-self: flex-start;
+}
+
+a.publicacao-container div.publicacao-content h3,
+a.publicacao-container div.publicacao-content p
+{ margin: 0; }
+
+a.publicacao-container div.publicacao-content h3
+{
+	color: #9E042D;
+	font-size: 1rem;
+}
+
+a.publicacao-container div.publicacao-content p
+{
+	text-align: justify;
+	color: #333;
+}
+
+a.publicacao-container div.publicacao-data
+{ width: 90px; }
+
+a.publicacao-container div.publicacao-data p
+{
+	color: #7F8C8D;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 768px)
+{
+	a.publicacao-container
+	{
+		flex-direction: column;
+		row-gap: 0;
+		column-gap: 0;
+		align-items: flex-start;
+	}
+
+	a.publicacao-container div.publicacao-content h3,
+	a.publicacao-container div.publicacao-content p
+	{
+		text-align: left;
+	}
+
+	a.publicacao-container div.publicacao-data
+	{
+		width: auto;
+		margin: 0;
+	}
+	
+	a.publicacao-container div.publicacao-data p
+	{
+		margin: 0 0 0 calc(40px + 0.5rem);
+		text-align: left;
+	}
+}
