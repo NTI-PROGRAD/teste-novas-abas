@@ -116,16 +116,10 @@ h3.titulo-area {
 	text-align: center;
 }
 
-div.quadro-de-avisos {
-	padding: 5px;
-	border-radius: 5px;
-	border-top: 1px solid #c0c5cc;
-	border-bottom: 1px solid #c0c5cc;
-	box-shadow: -1px 0 0 rgba(0, 0, 0, 0.3);
+div#avisos-panel div.aviso:not(:last-child)
+{
+	margin-bottom: 1rem;
 }
-
-div.quadro-de-avisos div.aviso:not(:first-child)
-{ margin-top: 10px; }
 
 div.aviso {
 	padding: 15px 12px;
@@ -141,12 +135,25 @@ div.aviso p {
 	margin: 0;
 }
 
-div.quadro-de-avisos div.aviso p.data,
 div.aviso p.data {
 	font-size: 12px;
 	margin-bottom: 5px;
 	text-align: left;
 	font-style: italic;
+}
+
+div.aviso button.novo-comunicado
+{
+	background-color: transparent;
+	border: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	margin: 0;
+	color: #9E042D;
+	text-decoration: underline;
+	padding: 0;
+	cursor: pointer;
+	font-size: 14px;
 }
 
 div.aviso p span.scroll-trigger {
@@ -191,9 +198,8 @@ div.aviso p span.selecionados-modal-trigger {
 	}
 }
 
-@media screen and (max-width: 576px) {
-
-}
+@media screen and (max-width: 576px)
+{}
 
 .publicacao-titulo {
 	margin-left: 20px;

@@ -108,3 +108,10 @@ function activeSubTabButton(subTabId)
   let subTabButton = document.getElementById(subTabId);
   subTabButton.classList.add("active");
 }
+
+const comunicadoButton = document.querySelector("button.novo-comunicado");
+comunicadoButton.addEventListener("click", function () {
+  const novoComunicado = document.querySelector("div.aviso.novo-comunicado");
+  openTab("avisos");
+  novoComunicado.scrollIntoView({ behavior: "smooth" });
+});
