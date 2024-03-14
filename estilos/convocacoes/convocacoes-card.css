@@ -56,8 +56,12 @@ a.convocacao-card-container div.convocacao-card-content p
 
 a.convocacao-card-container div.convocacao-card-data
 {
-  width: 110px;
-  align-self: flex-start;
+  max-width: 110px;
+  flex: 1;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 a.convocacao-card-container div.convocacao-card-data p
